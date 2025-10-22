@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MyProfile = () => {
   // Placeholder user data. We will replace this with real data from Firebase Auth.
@@ -22,9 +23,9 @@ const MyProfile = () => {
           </h5>
           <span className="text-sm text-gray-500">{user.email}</span>
           <div className="flex mt-4 space-x-3 md:mt-6">
-            <button className="btn btn-primary">
+            <Link to="/update-profile" className="btn btn-primary">
               Update Profile
-            </button>
+            </Link>
           </div>
         </div>
       </div>

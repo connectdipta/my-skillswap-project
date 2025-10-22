@@ -1,0 +1,74 @@
+[
+  {
+    "skillId": 1,
+    "skillName": "Beginner Guitar Lessons",
+    "providerName": "Alex Martin",
+    "providerEmail": "alex@skillswap.com",
+    "price": 20,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Acoustic guitar classes for complete beginners focusing on chords, rhythm, and basic songs.",
+    "image": "https://i.ibb.co.com/MxVDyjLC/images.jpg",
+    "category": "Music"
+  },
+  {
+    "skillId": 2,
+    "skillName": "Spoken English Practice",
+    "providerName": "Sara Hossain",
+    "providerEmail": "sara@skillswap.com",
+    "price": 10,
+    "rating": 4.6,
+    "slotsAvailable": 5,
+    "description": "Conversational English sessions to improve fluency, pronunciation, and confidence.",
+    "image": "https://i.ibb.co.com/bMBXcNPG/images5.jpg",
+    "category": "Language"
+  },
+  {
+    "skillId": 3,
+    "skillName": "Basic Web Development",
+    "providerName": "John Parker",
+    "providerEmail": "john@skillswap.com",
+    "price": 30,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Learn HTML, CSS, and JavaScript from scratch to build your first website.",
+    "image": "https://i.ibb.co.com/qf6KWkY/images1.jpg",
+    "category": "Technology"
+  },
+  {
+    "skillId": 4,
+    "skillName": "Digital Photography Masterclass",
+    "providerName": "Lina Chowdhury",
+    "providerEmail": "lina@skillswap.com",
+    "price": 25,
+    "rating": 4.7,
+    "slotsAvailable": 2,
+    "description": "Master DSLR and smartphone photography with composition and lighting techniques.",
+    "image": "https://i.ibb.co.com/Y74kfXdK/images4.jpg",
+    "category": "Photography"
+  },
+  {
+    "skillId": 5,
+    "skillName": "Creative Writing Workshop",
+    "providerName": "David Kim",
+    "providerEmail": "david@skillswap.com",
+    "price": 15,
+    "rating": 4.5,
+    "slotsAvailable": 6,
+    "description": "Improve storytelling, character development, and dialogue through guided writing exercises.",
+    "image": "https://i.ibb.co.com/1tJKcDs4/images2.jpg",
+    "category": "Writing"
+  },
+  {
+    "skillId": 6,
+    "skillName": "Yoga for Beginners",
+    "providerName": "Nadia Rahman",
+    "providerEmail": "nadia@skillswap.com",
+    "price": 12,
+    "rating": 4.9,
+    "slotsAvailable": 8,
+    "description": "Gentle yoga sessions focused on flexibility, breathing, and stress relief for newcomers.",
+    "image": "https://i.ibb.co.com/zpDWfZc/images3.jpg",
+    "category": "Fitness"
+  }
+]
