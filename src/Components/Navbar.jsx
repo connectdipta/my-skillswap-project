@@ -48,9 +48,10 @@ const Navbar = () => {
               <li><button className="btn btn-sm btn-ghost">Logout</button></li>
             </ul>
           </div>
-        ) : (
-          <Link to="/login" className="btn btn-primary btn-outline px-6 py-2 rounded-full shadow-md hover:shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out bg-primary text-white">Login</Link>
-        )}
+        ) : (<>
+          <Link to="/login" className="mr-2 btn btn-primary btn-outline px-6 py-2 rounded-full shadow-md hover:shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out bg-primary text-white">Login</Link>
+          <Link to="/login" className="btn btn-primary btn-outline px-6 py-2 rounded-full shadow-md hover:shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out bg-primary text-white">Sign Up</Link>
+        </>)}
       </div>
     </div>
   );

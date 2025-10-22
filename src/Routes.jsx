@@ -13,6 +13,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
+        loader: () => fetch('data.json').then(res => res.json()),
         element: <Home></Home>,
       },
       {
