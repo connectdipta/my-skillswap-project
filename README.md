@@ -1,3 +1,5 @@
+Tailwind CSS
+
 react-router-dom: To handle Single Page Application (SPA) routing between your Home, Login, Signup, and My Profile pages.
 
 
