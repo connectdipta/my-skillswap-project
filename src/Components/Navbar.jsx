@@ -47,7 +47,14 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost px-0 hover:bg-transparent">
-          <img src={logo} alt="SkillSwap Logo" className="h-25" />
+          <div className="flex items-center gap-3 flex-wrap justify-center sm:justify-start">
+            <img
+               src={logo}
+               alt="SkillSwap Logo"
+               className="h-[72px] sm:h-[60px] max-sm:h-[52px] object-contain"
+            />
+            <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#C75C2E]">SkillSwap</span>
+         </div>
         </Link>
       </div>
 
