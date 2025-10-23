@@ -10,7 +10,6 @@ import SuccessStories from './SuccessStories';
 
 const Home = () => {
   const data = useLoaderData();
-  console.log(data);
 
   useEffect(() => {
     AOS.init({

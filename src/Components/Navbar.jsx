@@ -11,12 +11,12 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink to="/" className={({ isActive }) => isActive ? activeLinkStyle : "text-lg text-[#FFE8B0]"}>
+        <NavLink to="/" className={({ isActive }) => isActive ? activeLinkStyle : "text-lg text-black font-semibold"}>
           Home
         </NavLink>
       </li>
       <li>
-        <NavLink to="/my-profile" className={({ isActive }) => isActive ? activeLinkStyle : "text-lg text-[#FFE8B0]"}>
+        <NavLink to="/my-profile" className={({ isActive }) => isActive ? activeLinkStyle : "text-lg text-black font-semibold"}>
           My Profile
         </NavLink>
       </li>
@@ -51,7 +51,7 @@ const Navbar = () => {
             <img
                src={logo}
                alt="SkillSwap Logo"
-               className="h-[72px] sm:h-[60px] max-sm:h-[52px] object-contain"
+               className="h-[72px] sm:h-[60px] max-sm:h-[40px] object-contain"
             />
             <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#C75C2E]">SkillSwap</span>
          </div>
@@ -84,7 +84,7 @@ const Navbar = () => {
           </>
         ) : (
           <>
-            <Link to="/login" className="mr-2 btn px-6 max-sm:px-4 py-2 rounded-full shadow-md hover:shadow-lg transition duration-300 ease-in-out bg-[#C75C2E] text-white hover:bg-[#FF7F3F] active:scale-95 max-sm:text-xs">
+            <Link to="/login" className="mr-2 max-sm:mr-0 btn px-6 max-sm:px-4 py-2 rounded-full shadow-md hover:shadow-lg transition duration-300 ease-in-out bg-[#C75C2E] text-white hover:bg-[#FF7F3F] active:scale-95 max-sm:text-xs">
               Login
             </Link>
             <Link to="/signup" className="btn px-6 max-sm:px-4 py-2 rounded-full shadow-md hover:shadow-lg transition duration-300 ease-in-out bg-[#C75C2E] text-white hover:bg-[#FF7F3F] active:scale-95 max-sm:text-xs">
