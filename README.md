@@ -3,7 +3,7 @@ Tailwind CSS
 react-router-dom: To handle Single Page Application (SPA) routing between your Home, Login, Signup, and My Profile pages.
 
 
-firebase: For user authentication (Login, Signup, Google Social Login) and updating user profiles.
+firebase: For user authentication (Login, Signup, Google Login) and updating user profiles.
 
 
 react-hot-toast: To show success and error messages, like on form submissions or login failures.
@@ -19,3 +19,7 @@ react-icons: An excellent library for adding icons, which you'll need for the pa
 
 
 aos: One of the suggested animation packages to add subtle animations to your site.
+
+Marquee: 
+
+React-icons

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PopularSkills = ({ data }) => {
   return (
@@ -35,9 +36,11 @@ const PopularSkills = ({ data }) => {
                     <p className="text-sm mb-4 text-green-600 font-semibold">
                       <span className="font-bold text-gray-700">Price:</span> ${skill.price} / session
                     </p>
-                    <button className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full hover:scale-105 transform transition">
-                      View Details
-                    </button>
+                    <Link to={`/instructor/${skill.skillId}`}>
+                       <button className="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">
+                         View Details
+                       </button>
+                    </Link>
                 </div>
           </div>
 
