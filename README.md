@@ -4,7 +4,11 @@ SkillSwap is a vibrant learning platform that connects local learners with trust
 
 ---
 
+## Live Link
 
+Live: https://my-skillswap-83520.web.app/
+
+---
 
 ## Purpose
 
@@ -54,11 +58,3 @@ git clone https://github.com/connectdipta/my-skillswap-project.git
 cd skillswap
 npm install
 npm run dev
-
----
-
-## Live Link
-
-[https://my-skillswap-83520.web.app/](https://my-skillswap-83520.web.app/)
-
----
