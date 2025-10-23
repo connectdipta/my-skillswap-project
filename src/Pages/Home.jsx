@@ -10,7 +10,8 @@ import SuccessStories from './SuccessStories';
 
 const Home = () => {
   const data = useLoaderData();
-  console.log(data) 
+  console.log(data);
+
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -21,27 +22,25 @@ const Home = () => {
 
   return (
     <div>
-      
       <div data-aos="zoom-in">
-        <HeroSlider></HeroSlider>
+        <HeroSlider />
       </div>
 
-      <div data-aos="fade-in" className='bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 '>
-       <PopularSkills data = {data}></PopularSkills>
+      <div data-aos="fade-in" className="bg-[#FFE8B0]">
+        <PopularSkills data={data} />
       </div>
 
       <div data-aos="fade-in">
-        <TopRatedProvider></TopRatedProvider>
+        <TopRatedProvider />
       </div>
 
       <div data-aos="zoom-in-up">
-        <HowItWorks></HowItWorks>
+        <HowItWorks />
       </div>
 
       <div data-aos="flip-left">
-        <SuccessStories></SuccessStories>
+        <SuccessStories />
       </div>
-
     </div>
   );
 };

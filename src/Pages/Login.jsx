@@ -19,11 +19,11 @@ const Login = () => {
     setLoading(true);
     login(email, password)
       .then(() => {
-        toast.success('Logged in successfully!');
+        toast.success('Logged in successfully! 👍');
         navigate(from, { replace: true });
       })
-      .catch(error => {
-        toast.error(error.message);
+      .catch(() => {
+        toast.error('Error! 😣');
       })
       .finally(() => setLoading(false));
   };
@@ -31,25 +31,25 @@ const Login = () => {
   const handleGoogleLogin = () => {
     signInWithGoogle()
       .then(() => {
-        toast.success('Signed in with Google!');
+        toast.success('Signed in with Google! 👍');
         navigate(from, { replace: true });
       })
-      .catch(error => {
-        toast.error(error.message);
+      .catch(() => {
+        toast.error('Error! 😣');
       });
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-[#FFE8B0] p-4">
       <div className="bg-white w-full max-w-md rounded-3xl shadow-2xl p-8">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
+        <h2 className="text-3xl font-bold text-center text-[#4B2E2E] mb-6">
           Login Your Account
         </h2>
 
         <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
           {/* Email */}
           <div>
-            <label htmlFor="email" className="block text-gray-700 font-semibold mb-1">
+            <label htmlFor="email" className="block text-[#6B4226] font-semibold mb-1">
               Email
             </label>
             <input
@@ -58,14 +58,14 @@ const Login = () => {
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-400 outline-none"
+              className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#FF7F3F] outline-none"
               required
             />
           </div>
 
           {/* Password */}
           <div>
-            <label htmlFor="password" className="block text-gray-700 font-semibold mb-1">
+            <label htmlFor="password" className="block text-[#6B4226] font-semibold mb-1">
               Password
             </label>
             <div className="relative">
@@ -75,13 +75,13 @@ const Login = () => {
                 placeholder="Enter your password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-400 outline-none pr-10"
+                className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#FF7F3F] outline-none pr-10"
                 required
               />
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute top-2 right-3 text-xl text-gray-500 hover:text-blue-600"
+                className="absolute top-2 right-3 text-xl text-[#6B4226] hover:text-[#FF7F3F]"
               >
                 {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
               </button>
@@ -92,7 +92,7 @@ const Login = () => {
               <button
                 type="button"
                 onClick={() => navigate('/forgot-password', { state: { email } })}
-                className="text-sm text-blue-600 hover:underline font-medium"
+                className="text-sm text-[#FF7F3F] hover:underline font-medium"
               >
                 Forgot Password?
               </button>
@@ -105,7 +105,7 @@ const Login = () => {
             onClick={handleLogin}
             disabled={loading}
             className={`w-full py-2 rounded-xl font-semibold transition duration-200 ${
-              loading ? 'bg-blue-300 text-white cursor-not-allowed' : 'bg-blue-600 text-white hover:bg-blue-700'
+              loading ? 'bg-[#C75C2E] opacity-60 text-white cursor-not-allowed' : 'bg-[#C75C2E] text-white hover:bg-[#FF7F3F]'
             }`}
           >
             {loading ? 'Logging in...' : 'Login'}
@@ -115,7 +115,7 @@ const Login = () => {
         {/* Divider */}
         <div className="flex items-center my-6">
           <div className="flex-grow h-px bg-gray-300"></div>
-          <span className="px-3 text-gray-500 text-sm">or</span>
+          <span className="px-3 text-[#C75C2E] text-sm">or</span>
           <div className="flex-grow h-px bg-gray-300"></div>
         </div>
 
@@ -126,13 +126,13 @@ const Login = () => {
           className="w-full flex items-center justify-center gap-3 border border-gray-300 py-2 rounded-xl hover:bg-gray-100 transition"
         >
           <FcGoogle className="text-2xl" />
-          <span className="font-medium text-gray-700">Continue with Google</span>
+          <span className="font-medium text-[#6B4226]">Continue with Google</span>
         </button>
 
         {/* Sign Up Link */}
-        <p className="text-center text-gray-600 text-sm mt-6">
+        <p className="text-center text-[#6B4226] text-sm mt-6">
           Don’t have an account?{" "}
-          <Link to="/signup" className="text-blue-600 font-semibold hover:underline">
+          <Link to="/signup" className="text-[#FF7F3F] font-semibold hover:underline">
             Sign Up
           </Link>
         </p>

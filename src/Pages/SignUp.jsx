@@ -72,47 +72,47 @@ const SignUp = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-[#FFE8B0] p-4">
       <div className="bg-white w-full max-w-md rounded-3xl shadow-2xl p-8">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
+        <h2 className="text-3xl font-bold text-center text-[#4B2E2E] mb-6">
           Create Account
         </h2>
 
         <form className="space-y-5" onSubmit={handleSubmit}>
           {/* Name */}
           <div>
-            <label htmlFor="name" className="block text-gray-700 font-semibold mb-1">Full Name</label>
-            <input name="name" id="name" type="text" placeholder="Enter your full name" className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-400 outline-none" required />
+            <label htmlFor="name" className="block text-[#6B4226] font-semibold mb-1">Full Name</label>
+            <input name="name" id="name" type="text" placeholder="Enter your full name" className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#FF7F3F] outline-none" required />
           </div>
 
           {/* Photo URL */}
           <div>
-            <label htmlFor="photo" className="block text-gray-700 font-semibold mb-1">Profile Picture</label>
-            <input name="photo" id="photo" type="text" placeholder="Paste your photo URL" className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-400 outline-none" />
+            <label htmlFor="photo" className="block text-[#6B4226] font-semibold mb-1">Profile Picture</label>
+            <input name="photo" id="photo" type="text" placeholder="Paste your photo URL" className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#FF7F3F] outline-none" />
           </div>
 
           {/* Email */}
           <div>
-            <label htmlFor="email" className="block text-gray-700 font-semibold mb-1">Email</label>
-            <input name="email" id="email" type="email" placeholder="Enter your email" className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-400 outline-none" required />
+            <label htmlFor="email" className="block text-[#6B4226] font-semibold mb-1">Email</label>
+            <input name="email" id="email" type="email" placeholder="Enter your email" className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#FF7F3F] outline-none" required />
           </div>
 
           {/* Password */}
           <div>
-            <label htmlFor="password" className="block text-gray-700 font-semibold mb-1">Password</label>
+            <label htmlFor="password" className="block text-[#6B4226] font-semibold mb-1">Password</label>
             <div className="relative">
               <input
                 name="password"
                 id="password"
                 type={showPassword ? 'text' : 'password'}
                 placeholder="Create a password"
-                className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-400 outline-none pr-10"
+                className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#FF7F3F] outline-none pr-10"
                 required
               />
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute top-2 right-3 text-xl text-gray-500 hover:text-pink-600"
+                className="absolute top-2 right-3 text-xl text-[#6B4226] hover:text-[#FF7F3F]"
               >
                 {showPassword ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
               </button>
@@ -125,9 +125,10 @@ const SignUp = () => {
             type="submit"
             disabled={loading}
             className={`w-full py-2 rounded-xl font-semibold transition duration-200 ${
-             loading
-            ? 'bg-pink-300 text-white cursor-not-allowed'
-            : 'bg-pink-600 text-white hover:bg-pink-700 active:scale-95 active:bg-pink-800'}`}
+              loading
+                ? 'bg-[#C75C2E] opacity-60 text-white cursor-not-allowed'
+                : 'bg-[#C75C2E] text-white hover:bg-[#FF7F3F] active:scale-95'
+            }`}
           >
             {loading ? 'Registering...' : 'Register'}
           </button>
@@ -136,7 +137,7 @@ const SignUp = () => {
         {/* Divider */}
         <div className="flex items-center my-6">
           <div className="flex-grow h-px bg-gray-300"></div>
-          <span className="px-3 text-gray-500 text-sm">or</span>
+          <span className="px-3 text-[#C75C2E] text-sm">or</span>
           <div className="flex-grow h-px bg-gray-300"></div>
         </div>
 
@@ -147,13 +148,13 @@ const SignUp = () => {
           className="w-full flex items-center justify-center gap-3 border border-gray-300 py-2 rounded-xl hover:bg-gray-100 transition"
         >
           <FcGoogle className="text-2xl" />
-          <span className="font-medium text-gray-700">Sign up with Google</span>
+          <span className="font-medium text-[#6B4226]">Sign up with Google</span>
         </button>
 
         {/* Login Link */}
-        <p className="text-center text-gray-600 text-sm mt-6">
+        <p className="text-center text-[#6B4226] text-sm mt-6">
           Already have an account?{' '}
-          <Link to="/login" className="text-pink-600 font-semibold hover:underline">Login</Link>
+          <Link to="/login" className="text-[#FF7F3F] font-semibold hover:underline">Login</Link>
         </p>
       </div>
     </div>

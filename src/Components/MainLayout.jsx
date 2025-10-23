@@ -15,13 +15,13 @@ const MainLayout = () => {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <Navbar></Navbar>
-      <main>
-        <Outlet></Outlet>
+    <div className="max-w-[1800px] mx-auto  bg-[#FFE8B0] text-[#4B2E2E] min-h-screen">
+      <Navbar />
+      <main className="py-6 px-4 max-sm:px-1">
+        <Outlet />
       </main>
       <div data-aos="fade-up">
-        <Footer></Footer>
+        <Footer />
       </div>
     </div>
   );

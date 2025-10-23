@@ -30,10 +30,10 @@ const topProviders = [
 
 const TopRatedProvider = () => {
   return (
-    <section className="py-12 bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 ">
+    <section className="py-12 bg-[#FFE8B0]">
       <div className="text-center mb-8" data-aos="fade-in">
-        <h2 className="text-3xl font-bold text-gray-800">Top Rated Providers</h2>
-        <p className="text-gray-600 mt-2">Meet our most trusted and loved instructors</p>
+        <h2 className="text-3xl font-bold text-[#4B2E2E]">Top Rated Providers</h2>
+        <p className="text-[#6B4226] mt-2">Meet our most trusted and loved instructors</p>
       </div>
 
       <Swiper
@@ -56,11 +56,11 @@ const TopRatedProvider = () => {
                 className="w-full md:w-1/2 max-h-150 object-cover"
               />
               <div className="p-6 md:w-1/2 text-left">
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">{provider.name}</h3>
-                <p className="text-md text-gray-600 mb-1">{provider.skill}</p>
-                <p className="text-sm text-gray-500 mb-2">⭐ {provider.rating}</p>
-                <p className="text-sm text-gray-700 mb-4">{provider.description}</p>
-                <button className="px-5 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full hover:scale-105 hover:shadow-md transition">
+                <h3 className="text-2xl font-bold text-[#4B2E2E] mb-2">{provider.name}</h3>
+                <p className="text-md text-[#C75C2E] mb-1">{provider.skill}</p>
+                <p className="text-sm text-[#6B4226] mb-2">⭐ {provider.rating}</p>
+                <p className="text-sm text-[#4B2E2E] mb-4">{provider.description}</p>
+                <button className="px-5 py-2 bg-[#C75C2E] text-white rounded-full hover:bg-[#FF7F3F] hover:scale-105 hover:shadow-md transition">
                   View Profile
                 </button>
               </div>

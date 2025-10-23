@@ -14,21 +14,27 @@ const slides = [
     subtitle: 'Find local tutors to start your musical journey.',
     image: guitar,
     buttonText: 'Browse Tutors',
-    buttonStyle: 'bg-white text-primary hover:bg-primary hover:text-white',
+    buttonStyle: 'bg-white text-[#6B4226] hover:bg-[#6B4226] hover:text-white',
+    titleColor: 'text-white',
+    subtitleColor: 'text-[#FFE8B0]',
   },
   {
     title: 'Share Your Skills',
     subtitle: 'Teach what you love and earn in your community.',
     image: skills,
     buttonText: 'Become a Tutor',
-    buttonStyle: 'bg-white text-pink-600 hover:bg-pink-600 hover:text-white',
+    buttonStyle: 'bg-white text-[#C75C2E] hover:bg-[#C75C2E] hover:text-white',
+    titleColor: 'text-white',
+    subtitleColor: 'text-[#FFE8B0]',
   },
   {
     title: 'Master a New Language',
     subtitle: 'Connect with native speakers in your area.',
     image: learn,
     buttonText: 'Find a Partner',
-    buttonStyle: 'bg-white text-purple-700 hover:bg-purple-700 hover:text-white',
+    buttonStyle: 'bg-white text-[#FF7F3F] hover:bg-[#FF7F3F] hover:text-white',
+    titleColor: 'text-white',
+    subtitleColor: 'text-[#FFE8B0]',
   },
 ];
 
@@ -47,21 +53,21 @@ const HeroSlider = () => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
-              className="w-full h-[500px] bg-cover bg-center relative"
+              className="w-full sm:h-[700px] max-sm:h-120 bg-cover bg-center relative"
               style={{ backgroundImage: `url('${slide.image}')` }}
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent flex items-center justify-start px-10">
-                <div className="text-left max-w-xl">
-                  <h2 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow mb-4">
-                    {slide.title}
+              <div className="absolute inset-0 bg-black/70 flex items-center justify-center px-4 sm:px-10 text-center">
+                <div className="max-w-3xl">
+                  <h2 className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold drop-shadow mb-6 ${slide.titleColor}`}>
+                     {slide.title}
                   </h2>
-                  <p className="text-lg md:text-xl text-white mb-6 drop-shadow">
+                  <p className={`text-lg sm:text-xl md:text-2xl lg:text-3xl mb-8 drop-shadow ${slide.subtitleColor}`}>
                     {slide.subtitle}
                   </p>
                   <button
-                    className={`px-6 py-3 rounded-full font-semibold transition duration-300 ease-in-out shadow-md ${slide.buttonStyle}`}
+                     className={`px-8 py-4 text-lg sm:text-xl lg:text-2xl rounded-full font-semibold transition duration-300 ease-in-out shadow-md hover:scale-105 ${slide.buttonStyle}`}
                   >
-                    {slide.buttonText}
+                     {slide.buttonText}
                   </button>
                 </div>
               </div>
